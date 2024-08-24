@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    color: #fff;
+}
+
+select option:hover{
+    background-color: #BF9B30 !important;
+}
+select option{
+    background-color: #D0D0D0;
+}
+/* //////////////////// */
+.primary-color{
+    color:#BF9B30;
+}
+.bg-primary-color{
+    background-color:#BF9B30;
+}
+.gray-color{
+    color: #D0D0D0;
+}
+/* ////////////// */
+
+.inBoxDragging{
+    background-color: #BF9B30 !important;
+}
+
+#fileMessage{
+    color: #BF9B30;
+    display: none;
+    
+}
+/* /////////////////// */
+.certificated-details{
+    background-image: url(../images/secondary_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 25, 25,0.9);
+}
+
+.certificated-details-title h2{
+    border-bottom:1px solid #BF9B30;
+    padding: 6px 0px;
+    width: fit-content;
+    
+}
+.certificated-details-inputs > div{
+    padding: 20px;
+}
+.certificated-details-inputs div input{
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+
+}
+.certificated-details-inputs div input:focus{
+    border: 2px solid #BF9B30;
+}
+
+.select-course-group, .student-course-group{
+    position: relative;
+
+}
+.select-course , .select-student{
+    width: 100%;
+    height: 40px;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+
+}
+.select-icon{
+    position: absolute;
+    color: #D0D0D0;
+    right: 15px;
+    top: 2px;
+    font-size: 20px;
+}
+#upload-certificate-container{
+    border: 1px dashed #BF9B30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1919;
+}
+
+.button-group{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.button-group button{
+    
+    width: 48%;
+    height: fit-content;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+}
+.button-group button:hover{
+    opacity: 0.8;
+}
+
+.upload-icons{
+    position: relative;
+    height: 55px;
+}
+.arrow{
+    position: absolute;
+    bottom: 0;
+    left:47%;
+}
+.browse-link{
+    cursor: pointer;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifated details</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="certificated-details">
+
+        <div class="overlay p-5">
+            <div class="certificated-details-title">
+                <h2 class="fs-4">Certificate Details</h2>
+            </div>
+
+            <div class="certificated-details-inputs row gx-5">
+                <div class="col-xl-4 col-sm-12">
+                    <h3 class="fs-6">Student Name</h3>
+                    <div class="student-course-group">
+                        <select class="select-student opacity-25">
+                           <option value=""></option>
+                        </select>
+                        <div class="select-icon">
+                          <i class="fas fa-chevron-down"></i>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-xl-4 col-sm-6">
+                    <h3 class="fs-6">Date Acquired</h3>
+                    <input type="date" class="opacity-25">
+                </div>
+
+                <div class="col-xl-4 col-sm-6">
+                    <h3 class="fs-6">Date Uploaded</h3>
+                    <input type="date" class="opacity-25 ">
+                </div>
+
+                <div class="col-12">
+                    <h3 class="fs-6">Course</h3>
+                    <div class="select-course-group">
+                      <select class="select-course opacity-25">
+                         <option value=""></option>
+                         <option value="frontend">frontend</option>
+                         <option value="backend">backend</option>
+                      </select>
+                      <div class="select-icon">
+                        <i class="fas fa-chevron-down"></i>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <h3 class="fs-6">Upload Certificate</h3>
+                    <div id="upload-certificate-container">
+                        <div class="p-5 text-center">
+                            <div class="upload-icons">
+                              <i class="fas fa-cloud cloud fs-1 primary-color"></i>
+                              <i class="fas fa-arrow-circle-up arrow fs-2"></i>
+                            </div>
+                            <span class="fs-5">drag & drop file or </span>
+
+                            <input type="file" id="fileInput" class="d-none" accept=".png,.jpeg,.mp4,.pdf,.fsd,.al,.txt,.ppt"/>
+                            <a class="d-inline fs-5 primary-color browse-link" onclick="selectFile()">Browse</a>
+
+                            <p class="gray-color fs-6">supported formates: JPEG, PNG, GIF, MP4, PDF, FSD, AL, Word, PPT</p>
+
+                            <h4 class="fs-5" id="fileMessage">message</h4>
+                        
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12" >
+                    <div class="button-group float-end">
+                        <button type="button" class="bg-secondary">Cancel</button>
+                        <button type="button" class="bg-primary-color">upload</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
